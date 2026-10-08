@@ -91,6 +91,17 @@ h2 { font-size: clamp(42px, 5vw, 74px); margin-bottom: 0; }
 .gallery-item:hover img { transform: scale(1.06); }
 .gallery-wide { grid-row: span 2; }
 .gallery-tall { grid-column: 3; grid-row: span 2; }
+.science { background: var(--paper); }
+.science-grid { align-items: center; display: grid; gap: 36px; grid-template-columns: 1fr 1.1fr; }
+.science-copy p { font-size: 17px; line-height: 1.8; max-width: 560px; }
+.science-points { display: grid; gap: 12px; list-style: none; margin: 28px 0 0; padding: 0; }
+.science-points li { align-items: start; display: flex; gap: 10px; font-size: 14px; line-height: 1.6; }
+.science-points li::before { color: var(--saffron); content: '✦'; display: inline-block; font-size: 18px; margin-top: 2px; }
+.science-visual { display: grid; gap: 18px; grid-template-columns: 1.1fr .9fr; min-height: 420px; }
+.science-image { background: var(--cream); border: 0; cursor: zoom-in; min-height: 0; overflow: hidden; padding: 0; position: relative; }
+.science-image img { height: 100%; object-fit: cover; transition: transform .5s; width: 100%; }
+.science-image:hover img { transform: scale(1.05); }
+.science-image-large { grid-row: span 2; }
 .sketches { background: var(--cream); }
 .sketch-grid { display: grid; gap: 18px; grid-template-columns: 1.2fr .8fr .8fr; grid-template-rows: 260px 260px; }
 .sketch-item { background: var(--paper); border: 0; cursor: zoom-in; min-height: 0; overflow: hidden; padding: 0; }
@@ -145,6 +156,9 @@ footer { display: flex; font: 500 10px var(--mono); justify-content: space-betwe
   .interests { display: block; padding: 8px 8vw 80px; }
   .interest-card { min-height: 480px; margin-top: 18px; }
   .gallery-heading > p { margin-top: 25px; }
+  .science-grid, .science-visual { display: block; }
+  .science-copy { margin-bottom: 24px; }
+  .science-image { height: 260px; margin-bottom: 18px; }
   .gallery-grid, .sketch-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 190px 190px 190px; }
   .gallery-wide { grid-column: span 2; grid-row: auto; }
   .gallery-tall { grid-column: auto; grid-row: span 2; }

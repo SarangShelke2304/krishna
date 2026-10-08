@@ -3,7 +3,7 @@ const lightboxImage = lightbox.querySelector('img');
 const closeButton = lightbox.querySelector('.lightbox-close');
 
 const motionTargets = document.querySelectorAll(
-  '.section-label, .about-grid, .section-heading, .achievement-item, .interest-card, .gallery-heading, .gallery-item, .sketch-item, .contact > *'
+  '.section-label, .about-grid, .section-heading, .achievement-item, .interest-card, .science-copy, .science-image, .gallery-heading, .gallery-item, .sketch-item, .contact > *'
 );
 
 const motionObserver = new IntersectionObserver((entries, observer) => {
@@ -29,6 +29,14 @@ document.querySelectorAll('.gallery-item').forEach((item) => {
 });
 
 document.querySelectorAll('.sketch-item').forEach((item) => {
+  item.addEventListener('click', () => {
+    lightboxImage.src = item.dataset.full;
+    lightboxImage.alt = item.querySelector('img').alt;
+    lightbox.showModal();
+  });
+});
+
+document.querySelectorAll('.science-image').forEach((item) => {
   item.addEventListener('click', () => {
     lightboxImage.src = item.dataset.full;
     lightboxImage.alt = item.querySelector('img').alt;

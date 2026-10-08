@@ -23,3 +23,9 @@
 
 # Photos
 - /home/poison/krishna/photos/
+
+# Science Exhibition
+- created a working model of turbo jet engines for the science exhibition
+- built from scratch using scraps and aluminium sheets
+- designed a circuit to prevent overheating and stoping the combustion
+- also made a dummy model for reference and better understanding for the audience
